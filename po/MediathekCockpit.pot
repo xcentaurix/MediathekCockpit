@@ -1,0 +1,315 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MediathekCockpit\n"
+"POT-Creation-Date: 2025-06-17 16:42+0200\n"
+"PO-Revision-Date: 2025-06-17 16:45+0200\n"
+"Last-Translator: xcentaurix\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "All channels"
+msgstr ""
+
+msgid "Channel selection"
+msgstr ""
+
+msgid "Infobar/Play"
+msgstr ""
+
+msgid "Play/Pause"
+msgstr ""
+
+msgid "Stop playback"
+msgstr ""
+
+msgid "Skip forward"
+msgstr ""
+
+msgid "Skip backward"
+msgstr ""
+
+msgid "EPG Info"
+msgstr ""
+
+msgid "Do you want to resume playback at position: "
+msgstr ""
+
+msgid "High"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Low"
+msgstr ""
+
+msgid "DD.MM.YYYY"
+msgstr ""
+
+msgid "WD DD.MM.YYYY"
+msgstr ""
+
+msgid "DD.MM.YYYY HH:MM"
+msgstr ""
+
+msgid "WD DD.MM.YYYY HH:MM"
+msgstr ""
+
+msgid "DD.MM. HH:MM"
+msgstr ""
+
+msgid "WD DD.MM. HH:MM"
+msgstr ""
+
+msgid "YYYY/MM/DD"
+msgstr ""
+
+msgid "WD YYYY/MM/DD"
+msgstr ""
+
+msgid "YYYY/MM/DD HH:MM"
+msgstr ""
+
+msgid "WD YYYY/MM/DD HH:MM"
+msgstr ""
+
+msgid "MM/DD HH:MM"
+msgstr ""
+
+msgid "WD MM/DD HH:MM"
+msgstr ""
+
+msgid "Do nothing"
+msgstr ""
+
+msgid "Ask user"
+msgstr ""
+
+msgid "beginning"
+msgstr ""
+
+msgid "first mark"
+msgstr ""
+
+msgid "event start"
+msgstr ""
+
+msgid "COCKPIT"
+msgstr ""
+
+msgid "Entries in list"
+msgstr ""
+
+msgid "Select the number of movies by download."
+msgstr ""
+
+msgid "Show future movies"
+msgstr ""
+
+msgid "Include future movies in list"
+msgstr ""
+
+msgid "Movie resolution"
+msgstr ""
+
+msgid "Select the resolution for movie download."
+msgstr ""
+
+msgid "Download directory"
+msgstr ""
+
+msgid "Select the directory the downloads are stored in."
+msgstr ""
+
+msgid "FILTER"
+msgstr ""
+
+msgid "Skip 'Audio description'"
+msgstr ""
+
+msgid "Skip movies with titles that contain 'Audio description'"
+msgstr ""
+
+msgid "Skip 'Trailer'"
+msgstr ""
+
+msgid "Skip movies with titles that contain 'Trailer'"
+msgstr ""
+
+msgid "Skip 'Sign language'"
+msgstr ""
+
+msgid "Skip movies with titles that contain 'Sign language'"
+msgstr ""
+
+msgid "Skip short duration"
+msgstr ""
+
+msgid "Skip movies with duration shorter than value specified in settings."
+msgstr ""
+
+msgid "DEBUG"
+msgstr ""
+
+msgid "Log level"
+msgstr ""
+
+msgid "Select the debug log level."
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "min"
+msgstr ""
+
+msgid "Movies"
+msgstr ""
+
+msgid "Search results"
+msgstr ""
+
+msgid "Downloading movies..."
+msgstr ""
+
+msgid "Exit"
+msgstr ""
+
+msgid "Channels"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "No movies available"
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+msgid "Duration"
+msgstr ""
+
+msgid "Minutes"
+msgstr ""
+
+msgid "No valid stream detected."
+msgstr ""
+
+msgid "Unsupported video format or no valid stream detected."
+msgstr ""
+
+msgid "Download added"
+msgstr ""
+
+msgid "Download failed"
+msgstr ""
+
+msgid "Please check movie directory in plugin settings."
+msgstr ""
+
+msgid "Download Manager"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Functions"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Movie Info"
+msgstr ""
+
+msgid "Enter search text"
+msgstr ""
+
+msgid "Browse Mediathek libraries"
+msgstr ""
+
+msgid "Mediathek Downloads"
+msgstr ""
+
+msgid "MediathekCockpit"
+msgstr ""
+
+msgid "Plugin"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Copyright"
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid "End"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Defaults"
+msgstr ""
+
+msgid "Setup"
+msgstr ""
+
+msgid "Really close without saving settings?"
+msgstr ""
+
+msgid "Loading default settings will overwrite all settings, really load them?"
+msgstr ""
+
+msgid "Some changes require a GUI restart"
+msgstr ""
+
+msgid "Restart GUI now?"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Select directory"
+msgstr ""
+
+msgid "Path does not exist"
+msgstr ""
+
+msgid "File Task"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Loading"
+msgstr ""
+
+msgid "Deleting"
+msgstr ""
+
+msgid "Moving"
+msgstr ""
+
+msgid "Copying"
+msgstr ""
+
+msgid "FSTrim"
+msgstr ""

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<screen flags="wfNoBorder" name="MediathekCockpit" position="0,0" size="1920,1080" title="MediathekCockpit">
+	<widget font="Bold;32" noWrap="1" position="20,30" render="Label" size="1880,43" source="Title" transparent="1"/>
+	<widget position="20,100" render="Listbox" scrollbarMode="showOnDemand" size="1330,864" source="list" transparent="1">
+		<convert type="TemplatedMultiContent"> { "template": [ MultiContentEntryText(pos=(95,3),size=(212,36),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=0), MultiContentEntryPixmapAlphaBlend(pos=(5,0),size=(72,72),png=8,flags=BT_SCALE|BT_KEEP_ASPECT_RATIO|BT_ALIGN_CENTER), MultiContentEntryText(pos=(95,36),size=(138,36),font=1,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=5), MultiContentEntryText(pos=(350,3),size=(986,36),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=15), MultiContentEntryText(pos=(350,36),size=(980,36),font=1,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=16,color=0xa0a0a0,color_sel=0xa0a0a0,backcolor=None), MultiContentEntryText(pos=(245,36),size=(64,36),font=1,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=4) ], "fonts":[gFont("Regular",27),gFont("Regular",23),gFont("Regular",30)], "itemHeight":72 } </convert>
+	</widget>
+	<widget font="Regular;27" name="duration" position="1375,106" size="525,127" transparent="1" zPosition="1"/>
+	<widget font="Regular;27" name="description" position="1375,180" size="525,734" transparent="1" zPosition="1"/>
+	<widget font="Regular;26" halign="center" position="0,1030" render="Label" size="480,35" source="key_red" transparent="1"/>
+	<widget font="Regular;26" halign="center" position="480,1030" render="Label" size="480,35" source="key_green" transparent="1"/>
+	<widget font="Regular;26" halign="center" position="960,1030" render="Label" size="480,35" source="key_yellow" transparent="1"/>
+	<widget font="Regular;26" halign="center" position="1440,1030" render="Label" size="480,35" source="key_blue" transparent="1"/>
+	<eLabel backgroundColor="#ff0000" position="0,1070" size="480,10"/>
+	<eLabel backgroundColor="#669900" position="480,1070" size="480,10"/>
+	<eLabel backgroundColor="#e5b243" position="960,1070" size="480,10"/>
+	<eLabel backgroundColor="#3366cc" position="1440,1070" size="480,10"/>
+</screen>
