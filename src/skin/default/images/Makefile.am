@@ -1,2 +1,2 @@
-installdir = $(libdir)/enigma2/python/Plugins/Extensions/MediathekCockpit/skin/Shadow-FHD/images
+installdir = $(libdir)/enigma2/python/Plugins/Extensions/MediathekCockpit/skin/default/images
 install_DATA = *.png

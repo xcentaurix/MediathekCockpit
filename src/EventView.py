@@ -17,8 +17,9 @@ class EventView(Screen):
 
     def __init__(self, session, curr):
         logger.info("...")
-        Screen.__init__(self, session, windowTitle=curr[LIST_EVENT_NAME])
+        Screen.__init__(self, session)
         self.skinName = "EventView"
+        self.setTitle(curr[LIST_EVENT_NAME])
         self["actions"] = ActionMap(
             ["MTC_Actions", "OkCancelActions", "ChannelSelectEPGActions"],
             {
