@@ -1,0 +1,56 @@
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Download directory"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Entries in list"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Log level"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Movie date format"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Movie resolution"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Movie start position"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Resume at last position"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Setup"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Show future movies"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Skip 'Audio description'"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Skip 'Sign language'"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Skip 'Trailer'"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Skip short duration"
+msgstr ""
+
+#: /root/git/rel/MediathekCockpit/src/setup.xml
+msgid "Stop movie behaviour"
+msgstr ""

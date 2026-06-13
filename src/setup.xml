@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress XmlUnboundNsPrefix -->
+<setupxml>
+	<setup key="mediathekcockpit" title="Setup">
+		<item text="Entries in list" description="Select the number of movies by download.">config.plugins.mediathekcockpit.size</item>
+		<item text="Show future movies" description="Include future movies in list.">config.plugins.mediathekcockpit.future</item>
+		<item text="Movie resolution" description="Select the resolution for movie download.">config.plugins.mediathekcockpit.movie_resolution</item>
+		<item text="Download directory" description="Select the directory the downloads are stored in.">config.plugins.mediathekcockpit.movie_dir</item>
+		<item text="Movie date format" description="Select the date format for movie listings.">config.plugins.mediathekcockpit.movie_date_format</item>
+		<item text="Resume at last position" description="Resume playback at the last known position.">config.plugins.mediathekcockpit.movie_resume_at_last_pos</item>
+		<item text="Movie start position" description="Select where to start playback.">config.plugins.mediathekcockpit.movie_start_position</item>
+		<item text="Stop movie behaviour" description="Select what to do when stopping a movie.">config.plugins.mediathekcockpit.askstopmovie</item>
+		<item text="Skip 'Audio description'" description="Skip movies with titles that contain 'Audio description'.">config.plugins.mediathekcockpit.skip_audiodeskription</item>
+		<item text="Skip 'Trailer'" description="Skip movies with titles that contain 'Trailer'.">config.plugins.mediathekcockpit.skip_trailer</item>
+		<item text="Skip 'Sign language'" description="Skip movies with titles that contain 'Sign language'.">config.plugins.mediathekcockpit.skip_gebaerdensprache</item>
+		<item text="Skip short duration" description="Skip movies with duration shorter than value specified in settings.">config.plugins.mediathekcockpit.skip_short_duration</item>
+		<item level="2" text="Log level" description="Select the debug log level.">config.plugins.mediathekcockpit.debug_log_level</item>
+	</setup>
+</setupxml>

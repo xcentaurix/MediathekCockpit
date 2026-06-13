@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<skin>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MediathekCockpit" position="fill">
+		<panel name="Screen_Window_Full"/>
+		<panel position="center,100" size="e-60,e-40">
+			<widget position="0,0" render="Listbox" scrollbarMode="showOnDemand" size="1380,884" source="list" transparent="1">
+				<convert type="TemplatedMultiContent">
+				{
+					"template": [
+						MultiContentEntryText(pos=(80,3),size=(180,34),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=0),
+						MultiContentEntryPixmapAlphaBlend(pos=(4,0),size=(66,66),png=8,flags=BT_SCALE|BT_KEEP_ASPECT_RATIO|BT_ALIGN_CENTER),
+						MultiContentEntryText(pos=(80,34),size=(120,34),font=1,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=5),
+						MultiContentEntryText(pos=(300,3),size=(1070,34),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=15),
+						MultiContentEntryText(pos=(300,34),size=(1070,34),font=1,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=16,color=0xa0a0a0,color_sel=0xa0a0a0,backcolor=None),
+						MultiContentEntryText(pos=(210,34),size=(60,34),font=1,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=4)
+					],
+					"fonts":[gFont("Regular",25),gFont("Regular",21),gFont("Regular",28)],
+					"itemHeight":68
+				}
+				</convert>
+			</widget>
+			<widget font="Regular;24" name="duration" position="e-470,0" size="450,32" transparent="1" zPosition="1"/>
+			<widget font="Regular;24" name="description" position="e-470,45" size="450,780" transparent="1" zPosition="1"/>
+		</panel>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MovieInfo" position="fill">
+		<panel name="Screen_3"/>
+		<panel position="252,130" size="1416,825">
+			<widget enableWrapAround="1" position="0,0" render="Listbox" scrollbarMode="showOnDemand" size="e,e" source="list" transparent="1">
+				<convert type="TemplatedMultiContent">
+				{
+					"template": [
+						MultiContentEntryText(pos=(5,0), size=(360,68), flags=RT_VALIGN_CENTER, text=0),
+						MultiContentEntryText(pos=(375,0), size=(1036,68), flags=RT_VALIGN_CENTER|RT_WRAP, text=1),
+					],
+					"fonts": [gFont("Regular",28)],
+					"itemHeight":72
+				}
+				</convert>
+			</widget>
+		</panel>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="EventInfo" position="fill">
+		<panel name="Screen_3"/>
+		<panel position="252,130" size="1416,825">
+			<widget font="Regular;28" name="epg_description" position="0,0" scrollbarMode="showOnDemand" size="e,e-60" transparent="1"/>
+			<widget font="Regular;24" halign="left" name="datetime" position="0,e-50" size="460,40" transparent="1"/>
+			<widget font="Regular;24" halign="left" name="duration" position="480,e-50" size="240,40" transparent="1"/>
+			<widget font="Regular;24" halign="right" name="channel" position="e-380,e-50" size="380,40" transparent="1"/>
+		</panel>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="CockpitPlayer" position="fill" title="CockpitPlayer">
+		<eLabel backgroundColor="background5" cornerRadius="16" position="38,862" size="1839,184" zPosition="-11"/>
+		<eLabel backgroundColor="background" cornerRadius="14" position="370,864" size="1505,180" zPosition="-10"/>
+		<eLabel backgroundColor="dark_grey" position="380,915" size="1485,2" zPosition="-9"/>
+		<eLabel backgroundColor="dark_grey" position="1630,930" size="2,100" zPosition="-9"/>
+		<widget alphatest="blend" backgroundColor="secondBG" position="90,891" render="Picon" size="227,130" source="Service" transparent="1" zPosition="1">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular;44" noWrap="1" position="400,935" render="Label" size="1120,50" source="Service" transparent="1" valign="center">
+			<convert type="COCEventName">Name</convert>
+		</widget>
+		<widget backgroundColor="background" font="Bold;26" foregroundColor="white" halign="left" position="405,864" render="Label" size="110,51" source="Service" transparent="1" valign="center">
+			<convert type="COCServicePosition">Position,Negate</convert>
+		</widget>
+		<widget backgroundColor="background" font="Bold;26" halign="center" position="511,864" render="Label" size="110,51" source="Service" transparent="1" valign="center">
+			<convert type="COCServicePosition">Length</convert>
+		</widget>
+		<widget backgroundColor="background" font="Bold;26" foregroundColor="white" halign="right" position="621,864" render="Label" size="110,51" source="Service" transparent="1" valign="center">
+			<convert type="COCServicePosition">Remaining</convert>
+		</widget>
+		<widget alphatest="blend" foregroundColor="yellow" position="400,1005" render="Progress" size="1170,6" source="Service" transparent="1" zPosition="5">
+			<convert type="COCServicePosition">Position</convert>
+		</widget>
+		<widget alphatest="blend" foregroundColor="darkgrey" position="400,1005" render="Progress" size="1170,6" source="Service" transparent="1" zPosition="6">
+			<convert type="COCBeforeTSPosition">Position</convert>
+		</widget>
+		<widget alphatest="blend" foregroundColor="red" position="400,1005" render="Progress" size="1170,6" source="Service" transparent="1" zPosition="4">
+			<convert type="COCRecordPosition">Position</convert>
+		</widget>
+		<widget backgroundColor="background" font="Bold;60" foregroundColor="white" halign="center" position="1590,925" render="Label" size="320,60" source="Service" transparent="1" valign="top" zPosition="20">
+			<convert type="COCServicePosition">EndTime,ShowNoSeconds</convert>
+		</widget>
+		<widget backgroundColor="background" font="Bold;30" foregroundColor="white" halign="center" position="1590,990" render="Label" size="320,35" source="global.CurrentTime" transparent="1" valign="top" zPosition="20">
+			<convert type="ClockToText">Format: %d %B</convert>
+		</widget>
+		<widget alphatest="on" name="statusicon" pixmaps="icons/mp_play.png,icons/mp_pause.png,icons/mp_stop.png,icons/mp_forward.png,icons/mp_backward.png,icons/mp_slow.png" position="42,900" size="25,25" zPosition="5"/>
+		<widget backgroundColor="secondBG" borderColor="black" borderWidth="3" font="Regular;30" name="speed" position="72,895" size="110,40" transparent="1" zPosition="5"/>
+	</screen>
+	<screen backgroundColor="#1a1a1a" name="CockpitPlayerSummary" position="0,0" size="395,240">
+		<widget font="FdLcD;50" halign="center" position="0,0" render="Label" size="395,125" source="parent.Service" transparent="1" valign="center">
+			<convert type="COCEventName">Name</convert>
+		</widget>
+		<widget alphatest="blend" borderWidth="1" foregroundColor="yellow" position="0,140" render="Progress" size="395,15" source="parent.Service" transparent="1" zPosition="2">
+			<convert type="COCServicePosition">Position</convert>
+		</widget>
+		<widget alphatest="blend" borderWidth="1" foregroundColor="darkgrey" position="0,140" render="Progress" size="395,15" source="parent.Service" transparent="1" zPosition="3">
+			<convert type="COCBeforeTSPosition">Position</convert>
+		</widget>
+		<widget alphatest="blend" borderWidth="1" foregroundColor="red" position="0,140" render="Progress" size="395,15" source="parent.Service" transparent="1" zPosition="1">
+			<convert type="COCRecordPosition">Position</convert>
+		</widget>
+		<widget font="FdLcD;60" halign="left" position="0,160" render="Label" size="230,80" source="parent.Service" transparent="1" valign="center">
+			<convert type="COCServicePosition">EndTime,ShowNoSeconds</convert>
+		</widget>
+		<widget font="FdLcD;60" halign="right" position="240,160" render="Label" size="150,80" source="parent.Service" transparent="1" valign="center">
+			<convert type="COCServicePosition">Remaining,ShowNoSeconds</convert>
+		</widget>
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="ScreenPVRState" position="center,center" size="100,160" zPosition="1000">
+		<widget alphatest="blend" name="state_pic" position="0,0" size="100,100"/>
+		<widget backgroundColor="transparent" font="Regular;40" halign="center" name="state" position="0,110" size="100,54" transparent="1" valign="center"/>
+	</screen>
+</skin>
